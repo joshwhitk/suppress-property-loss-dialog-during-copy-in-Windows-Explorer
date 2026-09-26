@@ -1,4 +1,12 @@
 # suppress-windows-copy-loss-properties
+
+## Repository guide — 2026-09-27
+
+An AutoIt utility that dismisses Windows Explorer's file-property-loss prompt during copies.
+
+- The source is stop-copy-dialog.au3. This is dialog automation: it accepts the copy prompt; it does not preserve metadata unsupported by the destination filesystem.
+- The original Windows 7/8/10 instructions are retained below. Compatibility with newer Explorer dialogs has not been retested.
+
 This AutoITScript suppresses the "Are you sure you want to copy this file/folder without its properties" message from standard Explorer copy across USB key, external drives, or network.
 
 I don't want to distribute an EXE, for fear of my website getting flagged, so Here's how to install it (takes 10 mins total)
